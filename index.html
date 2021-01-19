@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Jumpscare</title>
+<meta charset="UTF-8">
+<meta name="description" content="jumpscare">
+<meta name="keywords" content="jumpscare">
+<meta name="viewport" content="width=device-width, initial scale=1">
+<meta name="author" content="Darko Markan">
+<link rel="stylesheet" type="text/css" href="stil.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+<script>
+$(document).ready(function() {
+$("button").click(function() {
+$("#slika").show();
+});
+});
+var scream = new Audio();
+scream.src = "scream.mp3";
+function vrisak() {
+scream.play();
+}
+</script>
+<div id="slika">
+<img src="https://i.ibb.co/jMD7KRK/316963-phpn5-Pz-U9.jpg" width="1400px" height="750px" />
+</div>
+<button onclick="vrisak()">Klikni ako smeš</button>
+<audio id="scream"></audio>
+
+</body>
+</html>
